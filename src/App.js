@@ -3,7 +3,7 @@ import "./App.css";
 import AppHeader from "./components/AppHeader";
 import PageContent from "./components/PageContent";
 import SideMenu from "./components/SideMenu";
-import PageContent_Login from "./Pages/PageContent_Login";
+import Login from "./Pages/Login";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -27,7 +27,7 @@ function App() {
         {isLoggedIn ? (
           <PageContent />
         ) : (
-          <PageContent_Login onLogin={handleLogin} />
+          <Login onLogin={handleLogin} />
         )}
       </div>
     </div>

@@ -1,4 +1,4 @@
-import {Image, Typography } from "antd"
+import {Image} from "antd"
 
 function AppHeader() {
     return <div className="AppHeader">
